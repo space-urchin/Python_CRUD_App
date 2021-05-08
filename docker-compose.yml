@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  server:
+    build: ./server/
+    depends_on:
+      - database
+    ports:
+      - "2233:2233"
+    volumes:
+      - ./server/:/app/
+    environment:
+      DB_HOST: database
+      DB_NAME: usersdb
+      DB_USER: testuser
+      DB_PASSWORD: root
+  database:
+    image: mysql:8.0
+    ports:
+      - "2250:3306"
+    volumes:
+      - ./database/data:/var/lib/mysql
+      - ./database/init-scripts:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: usersdb
+      MYSQL_USER: testuser
+      MYSQL_PASSWORD: root

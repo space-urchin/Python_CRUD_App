@@ -1,0 +1,49 @@
+body{
+  background-color: #D1C7DF;
+}
+
+.header{
+  background-color: #240046;
+  color: aliceblue;
+  font-family: 'Raleway', sans-serif;
+}
+
+.user-details{
+  background-color: #EDE5F0;
+  box-shadow: 0px 0px 20px 5px rgba(37, 37, 37, 0.185);
+  font-family: 'Open Sans', sans-serif;
+} 
+
+.table-dark td, .table-dark th, .table-dark thead th{
+  border-color: #c2bec4;
+}
+.user-details-table{
+  background-color: #41385c;
+  margin-bottom: 0;
+
+}
+
+.jumbotron{
+  border-radius: 0;
+}
+
+.btn:focus,.btn:active {
+  box-shadow: none !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+  background-color: #240046 !important;
+  border:none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{
+  box-shadow: none;
+}
+
+.fa-edit{
+  color: aliceblue;
+}
+
+.fa-trash-alt{
+  color: aliceblue;
+}
